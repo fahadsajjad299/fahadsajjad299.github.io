@@ -1,114 +1,137 @@
-# Fahad Sajjad
+<div align="center">
 
-**Bioinformatician | Python Developer | Data Analysis Specialist**
+# Hi there, I'm Fahad Sajjad 👋
+
+### 🧬 Bioinformatics Student | 🤖 ML & AI Enthusiast | 🐍 Python Developer
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/fahad-sajjad-299pak)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/fahadsajjad299)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:fahadsajjadbioinfo@aup.edu.pk)
+[![Portfolio](https://img.shields.io/badge/Portfolio-1b3c73?style=for-the-badge&logo=google-chrome&logoColor=white)](https://fahadsajjad299.github.io)
+
+</div>
 
 ---
 
-## Professional Summary
+## 👨‍🔬 About Me
 
-Results-driven Bioinformatician with strong expertise in computational biology and data analysis. Skilled Python developer committed to writing clean, maintainable code. Experienced in developing scalable bioinformatics applications and tools for biological data processing and analysis.
+```python
+fahad = {
+    "name"       : "Fahad Sajjad",
+    "degree"     : "BSc (Hons) Bioinformatics — Agriculture University Peshawar",
+    "semester"   : "6th Semester | CGPA: 3.5 / 4.00",
+    "location"   : "Peshawar, K.P, Pakistan 🇵🇰",
+    "interests"  : ["Machine Learning", "Artificial Intelligence",
+                    "Protein Feature Extraction", "Genomic Data Analysis"],
+    "currently"  : "Building Propylia — a GUI-based protein feature extraction tool",
+    "learning"   : ["R Programming", "Deep Learning", "RNA-Seq Analysis"],
+}
+```
 
 ---
 
-## Core Competencies
+## 🔬 Featured Projects
 
-**Programming Languages**
+### 🧬 Propylia — Bioinformatics Tool
+> A GUI-based protein feature extraction tool that generates ML-ready descriptors for functional prediction.
+
+- Accepts **plain-text** and **FASTA** format protein sequences
+- Computes **CTD**, **PAAC**, **AAC**, **Dipeptide**, **Autocorrelation** descriptors
+- Built with **Python** at Computational Lab, Abasyn University
+- Supervised by **Dr. Sajjad Ahmad**
+
+---
+
+### 🔬 RNA-Seq Biomarker Discovery — Colorectal Cancer
+> Explored RNA-Seq derived biomarkers for colorectal cancer classification via Machine Learning.
+
+- Applied statistical analysis and data visualization using **R**
+- Completed as part of AI & Biotechnology Internship (Remote, Italy)
+
+---
+
+## 🛠️ Tech Stack
+
+<div align="center">
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![R](https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white)
+![Machine Learning](https://img.shields.io/badge/Machine_Learning-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![Bioinformatics](https://img.shields.io/badge/Bioinformatics-1b3c73?style=for-the-badge&logoColor=white)
+![NCBI](https://img.shields.io/badge/NCBI-336699?style=for-the-badge&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 
-**Bioinformatics & Data Analysis**
+</div>
 
-![Biopython](https://img.shields.io/badge/Biopython-3776AB?style=for-the-badge&logo=python&logoColor=white)
-
-**Specialized Skills**
-
-![RNA-Seq Analysis](https://img.shields.io/badge/RNA--Seq_Analysis-FF6B6B?style=for-the-badge)
-![Machine Learning](https://img.shields.io/badge/Machine_Learning-4285F4?style=for-the-badge)
-![GEO Analysis](https://img.shields.io/badge/GEO_Analysis-00A6D6?style=for-the-badge)
-![Protein Analysis](https://img.shields.io/badge/Protein_Analysis-26C281?style=for-the-badge)
-
----
-
-## Professional Experience
-
-### Project: Propylia
-
-**GUI Application for Protein Feature Extraction**
-
-- Developed a comprehensive GUI application using Python for automated protein feature extraction
-- Implemented core bioinformatics algorithms based on fundamental Python programming concepts
-- Created user-friendly interface for researchers and data analysts
-- Utilized object-oriented programming principles for scalable, maintainable code
-
-
-### Project: RNA-Seq Biomarkers for Colorectal Cancer Classification
-
-**Machine Learning for Cancer Biomarker Discovery**
-
-- Conducted comprehensive GEO (Gene Expression Omnibus) database analysis
-- Processed and analyzed RNA-Seq expression data from colorectal cancer samples
-- Implemented machine learning algorithms for biomarker identification and classification
-- Performed differential gene expression analysis and statistical validation
-- Conducted GO (Gene Ontology) and KEGG (Kyoto Encyclopedia of Genes and Genomes) pathway enrichment analysis
-- Achieved significant predictive accuracy for cancer classification
-- Technologies: Python, R, GEO Database, GO/KEGG Analysis
--
+| Category | Tools & Technologies |
+|---|---|
+| **Programming** | Python, R |
+| **Bioinformatics** | Sequence Alignment, Phylogenetics, Protein Feature Extraction |
+| **Databases** | NCBI, GenBank, UniProt, EMBL, DDBJ |
+| **ML / AI** | Machine Learning, Deep Learning, Data Analysis |
+| **Tools** | PyCharm, RStudio, Git, GitHub |
 
 ---
 
-## Key Achievements
+## 💼 Experience
 
-- ✅ Developed automated bioinformatics tools that streamline research workflows
-- ✅ Successfully identified RNA-Seq derived biomarkers for cancer classification
-- ✅ Demonstrated expertise in GEO database mining and expression analysis
-- ✅ Applied machine learning techniques for biological data interpretation
-- ✅ Created user-friendly applications for complex bioinformatics tasks
-
----
-
-
-### Language Distribution
-
-![Python](https://img.shields.io/badge/Python-60%25-3776AB?style=for-the-badge)
-![R](https://img.shields.io/badge/R-40%25-276DC3?style=for-the-badge)
+| Role | Organization | Period |
+|---|---|---|
+| 🔬 Tool Developer (Intern) | Computational Lab, Abasyn University | Jun 2025 – Present |
+| 🤖 AI & Bioinformatics Intern | Remote, Italy | Jul 2025 – Dec 2025 |
+| 🐍 Advanced Python Trainee | UET Peshawar (NAVTTC/CISCO) | Aug 2024 – Oct 2024 |
 
 ---
 
-## Education
+## 🎓 Education
 
-**Bachelor of Science (BSc) in Bioinformatics**
-
-Agriculture University Peshawar, Pakistan
-
-**CGPA: 3.6/4.0**
-
----
-
-## Research Interests
-
-- Bioinformatics and Computational Biology
-- Gene Expression Analysis and RNA-Seq Data Processing
-- Machine Learning Applications in Healthcare and Disease Diagnosis
-- Protein Structure and Function Prediction
-- Biomarker Discovery and Cancer Classification
+| Degree | Institution | Year |
+|---|---|---|
+| 🎓 BSc (Hons) Bioinformatics | Agriculture University Peshawar | 2023 – 2027 |
+| 📘 FSc Pre-Medical | Army Public School & College Peshawar | 2021 – 2023 |
+| 📗 Matric Science | Army Public School & College Peshawar | 2019 – 2021 |
 
 ---
 
-## Professional Links
+## 🏆 Achievements & Certifications
 
-- 💼 [LinkedIn Profile](https://www.linkedin.com/in/fahad-sajjad-299pak)
-- 📧 [Personal Email](mailto:fahadsajjad299@gmail.com)
-- 📧 [University Email](mailto:fahadsajjadbioinfo@aup.edu.pk)
-- 🐙 [GitHub Profile](https://github.com/fahad-sajjad)
-
----
-
-## Get In Touch
-
-I'm always interested in collaborating on bioinformatics projects, discussing research ideas, or exploring opportunities in computational biology. Feel free to reach out!
+- 🏅 **Nominated** — Prime Minister Youth Laptop Scheme 2025 (Phase-IV)
+- 🎖️ **Certified Information Technology Specialist: Python** — Certiport (Pearson VUE)
+- 📜 **NAVTTC Advanced Python & Applications** — Government Certification, UET Peshawar
 
 ---
 
-*Last Updated: March 8, 2026*
+## 📊 GitHub Stats
 
+<div align="center">
+
+![Fahad's GitHub Stats](https://github-readme-stats.vercel.app/api?username=fahadsajjad299&show_icons=true&theme=default&hide_border=true&title_color=1b3c73&icon_color=c9a84c&text_color=333333)
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=fahadsajjad299&layout=compact&theme=default&hide_border=true&title_color=1b3c73&text_color=333333)
+
+</div>
+
+---
+
+## 📫 Contact Me
+
+<div align="center">
+
+| Platform | Link |
+|---|---|
+| 📧 Email | [fahadsajjadbioinfo@aup.edu.pk](mailto:fahadsajjadbioinfo@aup.edu.pk) |
+| 💼 LinkedIn | [linkedin.com/in/fahad-sajjad-299pak](https://www.linkedin.com/in/fahad-sajjad-299pak) |
+| 🌐 Portfolio | [fahadsajjad299.github.io](https://fahadsajjad299.github.io) |
+| 📱 Phone | (+92) 332 8339929 |
+
+</div>
+
+---
+
+<div align="center">
+
+*"Bridging computational intelligence with life sciences — one protein at a time."*
+
+![Profile Views](https://komarev.com/ghpvc/?username=fahadsajjad299&color=1b3c73&style=for-the-badge)
+
+</div>
