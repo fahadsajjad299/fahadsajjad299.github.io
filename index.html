@@ -52,7 +52,7 @@
     box-shadow: 0 1px 20px rgba(27,60,115,0.06);
   }
   .nav-logo { font-family:'DM Serif Display',serif; font-weight:800; font-size:1.4rem; color:var(--accent); letter-spacing:1px; }
-  .nav-links { display:flex; gap:2.5rem; list-style:none; }
+  .nav-links { display:flex; gap:2.2rem; list-style:none; }
   .nav-links a { font-family:'DM Sans',sans-serif; font-size:0.82rem; color:var(--muted); text-decoration:none; letter-spacing:0.5px; font-weight:500; transition: color 0.3s; }
   .nav-links a:hover { color:var(--accent); }
   .hero { position:relative; z-index:1; min-height: 100vh; display:flex; flex-direction:column; justify-content:center; padding: 8rem 4rem 4rem; overflow:hidden; }
@@ -61,7 +61,7 @@
   .hero-tag { font-family:'DM Mono',monospace; font-size:0.78rem; color:var(--accent2); letter-spacing:2px; text-transform:uppercase; margin-bottom:1.5rem; opacity:0; animation: fadeUp 0.8s ease forwards 0.2s; }
   .hero-name { font-family:'DM Serif Display',serif; font-weight:800; font-size: clamp(3.5rem, 8vw, 7rem); line-height:0.95; letter-spacing:-2px; color:var(--accent); opacity:0; animation: fadeUp 0.8s ease forwards 0.4s; }
   .hero-name span { color:var(--accent3); }
-  .hero-subtitle { font-family:'DM Sans',sans-serif; font-weight:400; font-size:1.15rem; color:var(--muted); margin-top:1.5rem; max-width:600px; opacity:0; animation: fadeUp 0.8s ease forwards 0.6s; }
+  .hero-subtitle { font-family:'DM Sans',sans-serif; font-weight:400; font-size:1.15rem; color:var(--muted); margin-top:1.5rem; max-width:640px; opacity:0; animation: fadeUp 0.8s ease forwards 0.6s; }
   .hero-cta { display:flex; gap:1rem; margin-top:2.5rem; flex-wrap:wrap; opacity:0; animation: fadeUp 0.8s ease forwards 0.8s; }
   .btn { display:inline-flex; align-items:center; gap:0.5rem; padding:0.85rem 2rem; border-radius:6px; font-family:'DM Sans',sans-serif; font-size:0.85rem; letter-spacing:0.3px; font-weight:600; text-decoration:none; transition: all 0.3s; cursor:pointer; border:none; }
   .btn-primary { background:var(--accent); color:#ffffff; font-weight:600; box-shadow: 0 4px 15px rgba(27,60,115,0.25); }
@@ -100,6 +100,7 @@
   .project-card.visible:hover { transform:translateY(-4px); }
   .project-icon { width:48px; height:48px; border-radius:10px; background:rgba(27,60,115,0.08); border:1px solid var(--border); display:flex; align-items:center; justify-content:center; font-size:1.4rem; margin-bottom:1.2rem; }
   .project-title { font-family:'DM Sans',sans-serif; font-weight:700; font-size:1.1rem; color:var(--text); margin-bottom:0.5rem; }
+  .project-status { display:inline-block; font-family:'DM Mono',monospace; font-size:0.65rem; letter-spacing:0.5px; text-transform:uppercase; color:var(--accent3); margin-bottom:0.6rem; }
   .project-desc { color:var(--muted); font-size:0.88rem; line-height:1.6; margin-bottom:1.2rem; }
   .project-tags { display:flex; flex-wrap:wrap; gap:0.5rem; }
   .tag { font-family:'DM Mono',monospace; font-size:0.68rem; padding:0.3rem 0.8rem; border-radius:4px; background:rgba(27,60,115,0.07); color:var(--accent2); border:1px solid rgba(27,60,115,0.12); letter-spacing:0.3px; }
@@ -131,6 +132,13 @@
   .edu-school { color:var(--accent2); font-size:0.88rem; font-weight:500; margin-bottom:0.4rem; }
   .edu-year { font-family:'DM Mono',monospace; font-size:0.75rem; color:var(--muted); margin-bottom:0.8rem; }
   .edu-badge { display:inline-block; padding:0.3rem 0.8rem; background:rgba(201,168,76,0.1); border:1px solid rgba(201,168,76,0.25); border-radius:4px; font-size:0.75rem; color:var(--accent3); font-family:'DM Sans',sans-serif; font-weight:600; }
+  .pub-list { list-style:none; }
+  .pub-item { display:flex; gap:1.2rem; align-items:flex-start; padding:1.5rem; margin-bottom:1rem; background:var(--card); border:1px solid var(--border); border-radius:12px; box-shadow: var(--shadow); opacity:0; transform:translateY(20px); transition: all 0.6s ease; }
+  .pub-item.visible { opacity:1; transform:translateY(0); }
+  .pub-icon { width:40px; height:40px; flex:0 0 40px; border-radius:8px; background:rgba(27,60,115,0.08); border:1px solid var(--border); display:flex; align-items:center; justify-content:center; font-size:1.1rem; }
+  .pub-text { font-size:0.92rem; color:var(--text); line-height:1.6; }
+  .pub-text strong { color:var(--accent2); }
+  .pub-meta { display:block; margin-top:0.3rem; font-family:'DM Mono',monospace; font-size:0.72rem; color:var(--muted); letter-spacing:0.3px; }
   .achieve-list { list-style:none; }
   .achieve-item { display:flex; gap:1.5rem; align-items:flex-start; padding:1.5rem; margin-bottom:1rem; background:var(--card); border:1px solid var(--border); border-radius:12px; box-shadow: var(--shadow); opacity:0; transform:translateX(-20px); transition: all 0.6s ease; }
   .achieve-item.visible { opacity:1; transform:translateX(0); }
@@ -173,6 +181,7 @@
     <li><a href="#about">About</a></li>
     <li><a href="#experience">Experience</a></li>
     <li><a href="#projects">Projects</a></li>
+    <li><a href="#publications">Publications</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#education">Education</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -182,9 +191,9 @@
 <div class="hero">
   <div class="hero-glow"></div>
   <div class="hero-glow2"></div>
-  <div class="hero-tag">// Bioinformatics · ML · AI · Python</div>
+  <div class="hero-tag">// Bioinformatics · Cancer Genomics · ML · AI</div>
   <h1 class="hero-name">Fahad<br/><span>Sajjad</span></h1>
-  <p class="hero-subtitle">BSc Bioinformatics Student & Tool Developer — bridging computational intelligence with life sciences research.</p>
+  <p class="hero-subtitle">Final-year Bioinformatics student & undergraduate researcher — bridging computational cancer genomics, machine learning, and life sciences research across international collaborations.</p>
   <div class="hero-cta">
     <a href="#projects" class="btn btn-primary">View Projects →</a>
     <a href="https://github.com/fahadsajjad299" target="_blank" class="btn btn-outline">GitHub ↗</a>
@@ -192,19 +201,19 @@
   </div>
   <div class="hero-stats">
     <div class="stat">
-      <div class="stat-num">1+</div>
+      <div class="stat-num">2.5+</div>
       <div class="stat-label">Years Python</div>
     </div>
     <div class="stat">
-      <div class="stat-num">3.5</div>
+      <div class="stat-num">3.6</div>
       <div class="stat-label">CGPA / 4.00</div>
     </div>
     <div class="stat">
-      <div class="stat-num">4th</div>
-      <div class="stat-label">Year</div>
+      <div class="stat-num">2</div>
+      <div class="stat-label">Publications</div>
     </div>
     <div class="stat">
-      <div class="stat-num">9+</div>
+      <div class="stat-num">11+</div>
       <div class="stat-label">Certifications</div>
     </div>
   </div>
@@ -217,19 +226,20 @@
   <h2 class="section-title">Who I Am</h2>
   <div class="about-grid">
     <div class="about-text">
-      <p>I am a <strong>4th-year Bioinformatics student (BSc Hons)</strong> at Agriculture University Peshawar, combining biological sciences with computational approaches to solve real-world life science problems.</p>
-      <p>My core interest lies in the applications of <strong>Machine Learning and Artificial Intelligence</strong> in bioinformatics — from protein feature extraction to cancer biomarker discovery.</p>
-      <p>With <strong>1+ year of Python experience</strong>, I have built GUI-based bioinformatics tools, analyzed genomic datasets, and developed ML-ready feature pipelines. I am also expanding into <strong>R programming</strong> for statistical analysis and biological data visualization.</p>
+      <p>I am a <strong>final-year Bioinformatics student (BSc Hons)</strong> at Agriculture University Peshawar (expected May 2027), currently working as an undergraduate researcher on cancer genomics with <strong>Shanghai Jiao Tong University's Bio-X Institute</strong>, remotely.</p>
+      <p>My research spans <strong>computational cancer biology</strong> — somatic mutation analysis, cancer subtype classification, and neoantigen prediction — alongside protein feature extraction and genome-resolved metagenomics.</p>
+      <p>With <strong>2.5+ years of Python programming</strong> and intermediate <strong>R</strong> (since August 2025), I build reproducible computational workflows for large-scale genomic and biological datasets, moving between statistical and machine-learning approaches as the problem demands.</p>
     </div>
     <div>
       <ul class="info-list">
-        <li><span class="label">Email</span><a href="mailto:fahadsajjad299@gmail.com">fahadsajjad299@gmail.com</a></li>
+        <li><span class="label">Email</span><a href="mailto:fahadsajjadbioinfo@aup.edu.pk">fahadsajjadbioinfo@aup.edu.pk</a></li>
         <li><span class="label">GitHub</span><a href="https://github.com/fahadsajjad299" target="_blank">fahadsajjad299</a></li>
         <li><span class="label">LinkedIn</span><a href="https://www.linkedin.com/in/fahad-sajjad-299pak" target="_blank">fahad-sajjad-299pak</a></li>
+        <li><span class="label">ResearchGate</span><a href="https://www.researchgate.net/profile/Fahad-Sajjad" target="_blank">Fahad Sajjad</a></li>
         <li><span class="label">Location</span>Peshawar, K.P, Pakistan</li>
         <li><span class="label">University</span>Agriculture University Peshawar</li>
-        <li><span class="label">CGPA</span>3.5 / 4.00</li>
-        <li><span class="label">Languages</span>Pashto · Urdu · English</li>
+        <li><span class="label">CGPA</span>3.6 / 4.00</li>
+        <li><span class="label">Languages</span>Pashto · Urdu · English · Chinese (HSK-1)</li>
       </ul>
     </div>
   </div>
@@ -243,17 +253,38 @@
   <div class="timeline">
     <div class="timeline-item">
       <div class="timeline-dot"></div>
+      <div class="timeline-date">July 2026 – Present</div>
+      <div class="timeline-title">Undergraduate Researcher — Cancer Genomics</div>
+      <div class="timeline-org">Shanghai Jiao Tong University, Bio-X Institute · Shanghai, China (Remote)</div>
+      <div class="timeline-desc">Conducting computational research on <strong style="color:var(--accent2)">TCGA</strong> cancer genomic datasets — somatic mutation analysis, cancer subtype classification, and ML-based neoantigen candidate prioritization — under Prof. Yi Shi, building reproducible workflows for large-scale genomic data.</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">June 2026 – July 2026</div>
+      <div class="timeline-title">Bioinformatics Research Intern</div>
+      <div class="timeline-org">Bio-MG Pakistan · Islamabad, Pakistan (Remote)</div>
+      <div class="timeline-desc">Genome-resolved metagenomics on the <strong style="color:var(--accent2)">KBase</strong> platform — sequencing data preprocessing, quality control, read trimming, taxonomic profiling, and functional characterization for microbial community analysis.</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">January 2026 – March 2026</div>
+      <div class="timeline-title">Undergraduate Research Project — Dataset Developer</div>
+      <div class="timeline-org">Independent Research Project · Peshawar, Pakistan</div>
+      <div class="timeline-desc">Developed a clinically curated, provenance-aware <strong style="color:var(--accent2)">TCGA-BRCA cohort</strong> of triple-negative breast cancer and age-matched Luminal A controls with linked whole-slide imaging, published as a research dataset on Zenodo.</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
       <div class="timeline-date">June 2025 – Present</div>
       <div class="timeline-title">Tool Developer — Internship</div>
       <div class="timeline-org">Computational Lab, Abasyn University · Peshawar, Pakistan</div>
-      <div class="timeline-desc">Developing <strong style="color:var(--accent2)">Propylia</strong> — a GUI-based bioinformatics tool that generates ML-ready protein descriptors for functional prediction, including CTD, PAAC, AAC, and autocorrelation features.</div>
+      <div class="timeline-desc">Building <strong style="color:var(--accent2)">Propylia</strong> — a GUI-based bioinformatics tool that generates ML-ready protein descriptors for functional prediction, including CTD, PAAC, AAC, and autocorrelation features.</div>
     </div>
     <div class="timeline-item">
       <div class="timeline-dot"></div>
       <div class="timeline-date">July 2025 – December 2025</div>
       <div class="timeline-title">Intern — AI & Biotechnology/Bioinformatics</div>
       <div class="timeline-org">Remote · Italy</div>
-      <div class="timeline-desc">Learning R programming from scratch. Completed assignments through a full project: <strong style="color:var(--accent2)">Exploring RNA-Seq derived Biomarkers for Colorectal Cancer Classification via Machine Learning</strong>.</div>
+      <div class="timeline-desc">Learned R programming from scratch through to project completion: <strong style="color:var(--accent2)">Exploring RNA-Seq derived Biomarkers for Colorectal Cancer Classification via Machine Learning</strong>.</div>
     </div>
     <div class="timeline-item">
       <div class="timeline-dot"></div>
@@ -272,27 +303,48 @@
   <h2 class="section-title">Featured Work</h2>
   <div class="projects-grid">
     <div class="project-card">
-      <div class="project-icon">🧬</div>
-      <div class="project-title">Propylia</div>
-      <div class="project-desc">A GUI-based bioinformatics tool for protein feature extraction. Accepts plain-text and FASTA sequences, generates ML-ready descriptors including CTD, PAAC, AAC, Dipeptide Composition, and Autocorrelation features for functional prediction.</div>
+      <div class="project-icon">🎗️</div>
+      <div class="project-status">Published dataset</div>
+      <div class="project-title">TCGA-BRCA TNBC Cohort Dataset</div>
+      <div class="project-desc">A clinically curated, provenance-aware TCGA-BRCA cohort of triple-negative breast cancer and age-matched Luminal A controls with linked whole-slide imaging data, built for computational cancer research and ML applications. Published as a research dataset on Zenodo.</div>
       <div class="project-tags">
-        <span class="tag">Python</span><span class="tag">GUI</span><span class="tag">Bioinformatics</span><span class="tag">ML</span><span class="tag">Protein Features</span>
+        <span class="tag">R</span><span class="tag">GDC API</span><span class="tag">WSI</span><span class="tag">Cancer Genomics</span><span class="tag">Dataset Curation</span>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-icon">🧫</div>
+      <div class="project-status">Ongoing — SJTU Bio-X</div>
+      <div class="project-title">Cancer Genomics & Neoantigen Prediction</div>
+      <div class="project-desc">Remote research with Prof. Yi Shi on TCGA-LIHC: mutation-level and expression analysis, ML-based liver cancer subtype classification (100x10-fold CV across SVM, Random Forest, XGBoost, and deep models), and using informative mutations to prioritize neoantigen candidates.</div>
+      <div class="project-tags">
+        <span class="tag">Python</span><span class="tag">Machine Learning</span><span class="tag">Neoantigen</span><span class="tag">TCGA</span><span class="tag">Feature Selection</span>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-icon">🧬</div>
+      <div class="project-status">Ongoing</div>
+      <div class="project-title">Propylia</div>
+      <div class="project-desc">A GUI-based bioinformatics tool for protein feature extraction. Accepts plain-text and FASTA sequences, generating ML-ready descriptors including CTD, PAAC, AAC, Dipeptide Composition, and Autocorrelation features for functional prediction.</div>
+      <div class="project-tags">
+        <span class="tag">Python</span><span class="tag">GUI</span><span class="tag">Bioinformatics</span><span class="tag">Protein Features</span>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-icon">🦠</div>
+      <div class="project-status">In progress</div>
+      <div class="project-title">Genome-Resolved Metagenomics</div>
+      <div class="project-desc">Metagenomic data analysis on a gut IBD cohort using the KBase platform — sequencing data preprocessing, quality control, read trimming, taxonomic profiling, and functional characterization for microbial community and genome characterization.</div>
+      <div class="project-tags">
+        <span class="tag">Metagenomics</span><span class="tag">KBase</span><span class="tag">Taxonomic Profiling</span><span class="tag">QC</span>
       </div>
     </div>
     <div class="project-card">
       <div class="project-icon">🔬</div>
+      <div class="project-status">Completed</div>
       <div class="project-title">RNA-Seq Biomarker Discovery</div>
       <div class="project-desc">Explored RNA-Seq derived biomarkers for colorectal cancer classification using Machine Learning. Applied statistical analysis and data visualization on biological datasets using R programming.</div>
       <div class="project-tags">
         <span class="tag">R</span><span class="tag">RNA-Seq</span><span class="tag">Machine Learning</span><span class="tag">Cancer Research</span>
-      </div>
-    </div>
-    <div class="project-card">
-      <div class="project-icon">🧪</div>
-      <div class="project-title">Genomic Data Analysis</div>
-      <div class="project-desc">Applied Python for genomic data science including sequence alignment, phylogenetic tree construction, and data retrieval from biological databases such as NCBI, GenBank, and UniProt.</div>
-      <div class="project-tags">
-        <span class="tag">Python</span><span class="tag">Genomics</span><span class="tag">NCBI</span><span class="tag">UniProt</span><span class="tag">Biopython</span>
       </div>
     </div>
   </div>
@@ -300,8 +352,31 @@
 
 <div class="divider"></div>
 
+<section id="publications">
+  <div class="section-label">// 04 — Publications</div>
+  <h2 class="section-title">Research Output</h2>
+  <ul class="pub-list">
+    <li class="pub-item">
+      <div class="pub-icon">📄</div>
+      <div class="pub-text">
+        <strong>A Clinically Curated and Provenance-Aware TCGA-BRCA Cohort of Triple-Negative Breast Cancer and Age-Matched Luminal A Controls with Linked Whole-Slide Images.</strong>
+        <span class="pub-meta">Sajjad, F., Ibrahim, J., Aliyu, Y. M. (2026) · Research Dataset · Zenodo</span>
+      </div>
+    </li>
+    <li class="pub-item">
+      <div class="pub-icon">📄</div>
+      <div class="pub-text">
+        <strong>Review on the Long-Range Mediators of Oncogenic Signalling, Epigenetic Reprogramming, Metastasis, and Therapy Resistance in Microbiome-Cancer.</strong>
+        <span class="pub-meta">Aliyu, Y. M., Sajjad, F., Bashir, A., et al. (2026) · UMYU Journal of Microbiology Research (UJMR)</span>
+      </div>
+    </li>
+  </ul>
+</section>
+
+<div class="divider"></div>
+
 <section id="skills">
-  <div class="section-label">// 04 — Skills</div>
+  <div class="section-label">// 05 — Skills</div>
   <h2 class="section-title">Technical Stack</h2>
   <div class="skill-legend">
     <div class="legend-item"><div class="legend-dot high"></div> Proficient</div>
@@ -318,25 +393,25 @@
     <div class="skill-group">
       <div class="skill-group-header"><div class="skill-group-icon">🧬</div><div class="skill-group-title">Bioinformatics</div></div>
       <div class="skill-tags">
-        <span class="skill-tag level-high">Protein Feature Extraction</span><span class="skill-tag level-high">Sequence Alignment</span><span class="skill-tag level-mid">Phylogenetics</span><span class="skill-tag level-mid">RNA-Seq Analysis</span><span class="skill-tag level-mid">Biopython</span><span class="skill-tag level-base">Structural Bioinformatics</span>
+        <span class="skill-tag level-high">Protein Feature Extraction</span><span class="skill-tag level-high">Sequence Alignment</span><span class="skill-tag level-high">Sequence Retrieval</span><span class="skill-tag level-mid">Phylogenetics</span><span class="skill-tag level-mid">RNA-Seq Analysis</span><span class="skill-tag level-mid">Metagenomics</span><span class="skill-tag level-mid">Genome-Resolved Metagenomics</span><span class="skill-tag level-mid">Taxonomic Profiling</span><span class="skill-tag level-mid">Gene Ontology (GO)</span><span class="skill-tag level-mid">KEGG Pathway Analysis</span><span class="skill-tag level-base">Structural Bioinformatics</span>
       </div>
     </div>
     <div class="skill-group">
       <div class="skill-group-header"><div class="skill-group-icon">🗄️</div><div class="skill-group-title">Databases & Tools</div></div>
       <div class="skill-tags">
-        <span class="skill-tag level-high">NCBI / GenBank</span><span class="skill-tag level-high">UniProt</span><span class="skill-tag level-mid">EMBL / DDBJ</span><span class="skill-tag level-mid">PDB</span><span class="skill-tag level-base">KEGG</span><span class="skill-tag level-base">Ensembl</span>
+        <span class="skill-tag level-high">NCBI / GenBank</span><span class="skill-tag level-high">UniProt</span><span class="skill-tag level-mid">EMBL / DDBJ</span><span class="skill-tag level-mid">PDB</span><span class="skill-tag level-mid">KBase</span><span class="skill-tag level-base">Galaxy</span><span class="skill-tag level-base">Bioconductor</span><span class="skill-tag level-base">Ensembl</span><span class="skill-tag level-base">AlphaFold2</span>
       </div>
     </div>
     <div class="skill-group">
-      <div class="skill-group-header"><div class="skill-group-icon">🤖</div><div class="skill-group-title">ML / AI</div></div>
+      <div class="skill-group-header"><div class="skill-group-icon">🤖</div><div class="skill-group-title">ML / AI & Data</div></div>
       <div class="skill-tags">
-        <span class="skill-tag level-high">Machine Learning</span><span class="skill-tag level-high">Data Analysis</span><span class="skill-tag level-mid">Generative AI</span><span class="skill-tag level-base">Deep Learning</span>
+        <span class="skill-tag level-high">Machine Learning</span><span class="skill-tag level-high">Feature Selection</span><span class="skill-tag level-high">Statistical Analysis</span><span class="skill-tag level-mid">Data Visualization</span><span class="skill-tag level-mid">Differential Expression Analysis</span><span class="skill-tag level-mid">Functional Enrichment Analysis</span><span class="skill-tag level-mid">Generative AI</span><span class="skill-tag level-base">Deep Learning</span>
       </div>
     </div>
     <div class="skill-group">
       <div class="skill-group-header"><div class="skill-group-icon">🛠️</div><div class="skill-group-title">Dev Tools</div></div>
       <div class="skill-tags">
-        <span class="skill-tag level-high">Git / GitHub</span><span class="skill-tag level-high">PyCharm</span><span class="skill-tag level-mid">Anaconda</span><span class="skill-tag level-mid">Google Colab</span><span class="skill-tag level-base">Linux / Ubuntu</span>
+        <span class="skill-tag level-high">Git / GitHub</span><span class="skill-tag level-high">PyCharm</span><span class="skill-tag level-high">Jupyter Notebook</span><span class="skill-tag level-mid">Anaconda</span><span class="skill-tag level-mid">Google Colab</span><span class="skill-tag level-base">Linux / Ubuntu</span>
       </div>
     </div>
   </div>
@@ -345,14 +420,14 @@
 <div class="divider"></div>
 
 <section id="education">
-  <div class="section-label">// 05 — Education</div>
+  <div class="section-label">// 06 — Education</div>
   <h2 class="section-title">Academic Background</h2>
   <div class="edu-grid">
     <div class="edu-card">
       <div class="edu-degree">BSc (Hons) — Bioinformatics</div>
       <div class="edu-school">Agriculture University of Peshawar</div>
       <div class="edu-year">2023 – 2027 (Expected)</div>
-      <span class="edu-badge">CGPA: 3.5 / 4.00 · In Progress</span>
+      <span class="edu-badge">CGPA: 3.6 / 4.00 · In Progress</span>
     </div>
     <div class="edu-card">
       <div class="edu-degree">FSc Pre-Medical — High School</div>
@@ -371,14 +446,16 @@
     <div class="section-label">// Achievements & Certifications</div>
     <ul class="achieve-list" style="margin-top:1.5rem">
       <li class="achieve-item"><div class="achieve-num">01</div><div class="achieve-text"><strong>Nominated — Prime Minister Youth Laptop Scheme 2025 (Phase-IV)</strong><br/>Selected among top students for the national laptop scheme.</div></li>
-      <li class="achieve-item"><div class="achieve-num">02</div><div class="achieve-text"><strong>HEC Generative AI Training Course — Top Performer</strong><br/>Pak Angels · Issued Dec 2025 · Credential ID #35ac82bca566362b</div></li>
-      <li class="achieve-item"><div class="achieve-num">03</div><div class="achieve-text"><strong>AWS Educate Machine Learning Foundations</strong><br/>Amazon Web Services (AWS) · Issued Aug 2025</div></li>
-      <li class="achieve-item"><div class="achieve-num">04</div><div class="achieve-text"><strong>Introducing Generative AI with AWS</strong><br/>Udacity · Issued Jul 2025</div></li>
-      <li class="achieve-item"><div class="achieve-num">05</div><div class="achieve-text"><strong>Research Methodology</strong><br/>Forman Christian College (A Chartered University) · Issued Jul 2025</div></li>
-      <li class="achieve-item"><div class="achieve-num">06</div><div class="achieve-text"><strong>Python for Genomic Data Science</strong><br/>Johns Hopkins University · Issued Apr 2025 · Credential ID OOZH3Z7TGDBK</div></li>
-      <li class="achieve-item"><div class="achieve-num">07</div><div class="achieve-text"><strong>Introduction to Genomic Technologies</strong><br/>Johns Hopkins University · Issued Jan 2025 · Credential ID V7I8GJG86F1B</div></li>
-      <li class="achieve-item"><div class="achieve-num">08</div><div class="achieve-text"><strong>Certified Information Technology Specialist: Python</strong><br/>Certiport — A Pearson VUE Business · Issued Jan 2025</div></li>
-      <li class="achieve-item"><div class="achieve-num">09</div><div class="achieve-text"><strong>NAVTTC Advanced Python & Applications Course</strong><br/>Government-sponsored certification — University of Engineering & Technology, Peshawar</div></li>
+      <li class="achieve-item"><div class="achieve-num">02</div><div class="achieve-text"><strong>Bioinformatics: Introduction and Methods</strong><br/>Peking University, Coursera · Jul 2026</div></li>
+      <li class="achieve-item"><div class="achieve-num">03</div><div class="achieve-text"><strong>XXI Summer School Odesa 2026</strong><br/>Odesa I.I. Mechnikov National University · Jun 2026</div></li>
+      <li class="achieve-item"><div class="achieve-num">04</div><div class="achieve-text"><strong>HEC Generative AI Training Course — Top Performer</strong><br/>Pak Angels · Issued Dec 2025 · Credential ID #35ac82bca566362b</div></li>
+      <li class="achieve-item"><div class="achieve-num">05</div><div class="achieve-text"><strong>AWS Educate Machine Learning Foundations</strong><br/>Amazon Web Services (AWS) · Issued Aug 2025</div></li>
+      <li class="achieve-item"><div class="achieve-num">06</div><div class="achieve-text"><strong>Introducing Generative AI with AWS</strong><br/>Udacity · Issued Jul 2025</div></li>
+      <li class="achieve-item"><div class="achieve-num">07</div><div class="achieve-text"><strong>Research Methodology</strong><br/>Forman Christian College (A Chartered University) · Issued Jul 2025</div></li>
+      <li class="achieve-item"><div class="achieve-num">08</div><div class="achieve-text"><strong>Python for Genomic Data Science</strong><br/>Johns Hopkins University · Issued Apr 2025 · Credential ID OOZH3Z7TGDBK</div></li>
+      <li class="achieve-item"><div class="achieve-num">09</div><div class="achieve-text"><strong>Introduction to Genomic Technologies</strong><br/>Johns Hopkins University · Issued Jan 2025 · Credential ID V7I8GJG86F1B</div></li>
+      <li class="achieve-item"><div class="achieve-num">10</div><div class="achieve-text"><strong>Certified Information Technology Specialist: Python</strong><br/>Certiport — A Pearson VUE Business · Issued Jan 2025</div></li>
+      <li class="achieve-item"><div class="achieve-num">11</div><div class="achieve-text"><strong>NAVTTC Advanced Python & Applications Course</strong><br/>Government-sponsored certification — University of Engineering & Technology, Peshawar</div></li>
     </ul>
   </div>
 </section>
@@ -386,15 +463,16 @@
 <div class="divider"></div>
 
 <section id="contact">
-  <div class="section-label">// 06 — Contact</div>
+  <div class="section-label">// 07 — Contact</div>
   <h2 class="section-title">Get In Touch</h2>
   <div class="contact-grid">
     <div class="contact-info">
       <p>I'm open to research collaborations, internship opportunities, and bioinformatics projects. Feel free to reach out!</p>
       <div class="contact-links">
-        <a href="mailto:fahadsajjad299@gmail.com" class="contact-link"><span class="icon">✉</span> fahadsajjad299@gmail.com</a>
+        <a href="mailto:fahadsajjadbioinfo@aup.edu.pk" class="contact-link"><span class="icon">✉</span> fahadsajjadbioinfo@aup.edu.pk</a>
         <a href="https://github.com/fahadsajjad299" target="_blank" class="contact-link"><span class="icon">⌥</span> github.com/fahadsajjad299</a>
         <a href="https://www.linkedin.com/in/fahad-sajjad-299pak" target="_blank" class="contact-link"><span class="icon">◈</span> linkedin.com/in/fahad-sajjad-299pak</a>
+        <a href="https://www.researchgate.net/profile/Fahad-Sajjad" target="_blank" class="contact-link"><span class="icon">R</span> ResearchGate</a>
       </div>
     </div>
     <div>
@@ -420,11 +498,12 @@
       if (entry.isIntersecting) entry.target.classList.add('visible');
     });
   }, { threshold: 0.1 });
-  document.querySelectorAll('.timeline-item, .project-card, .skill-group, .edu-card, .achieve-item')
+  document.querySelectorAll('.timeline-item, .project-card, .skill-group, .edu-card, .achieve-item, .pub-item')
     .forEach(el => observer.observe(el));
   document.querySelectorAll('.project-card').forEach((el,i) => el.style.transitionDelay = `${i*0.1}s`);
   document.querySelectorAll('.skill-group').forEach((el,i) => el.style.transitionDelay = `${i*0.1}s`);
   document.querySelectorAll('.edu-card').forEach((el,i) => el.style.transitionDelay = `${i*0.1}s`);
+  document.querySelectorAll('.pub-item').forEach((el,i) => el.style.transitionDelay = `${i*0.1}s`);
 </script>
 </body>
 </html>
